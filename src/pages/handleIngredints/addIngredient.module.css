@@ -1,0 +1,94 @@
+/* AddIngredientForm.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.formCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #ffffff;
+  transition: transform 0.2s;
+  width: 400px;
+}
+
+.formCard:hover {
+  transform: scale(1.02);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.input,
+.checkbox {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkboxInput {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.checkboxInput:checked {
+  background-color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.checkboxInput:checked::after {
+  content: "✔";
+  display: block;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.checkboxLabel {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #218838;
+}

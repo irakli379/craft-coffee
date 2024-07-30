@@ -1,0 +1,53 @@
+/* DetailsStyles.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coffeeName {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ingredientsList {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ingredientCard {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.ingredientCard:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.ingredientName {
+  font-weight: bold;
+  color: #333;
+}
+
+.ingredientPrice {
+  color: #555;
+}
+
+.totalPrice {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import { createContext, useEffect, useState } from "react";
+// import AddIngredient from "./components/addIngredient";
+// import IngredientList from "./pages/ingredientList";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "./routes/routes";
+import { CoffeeProvider } from "./coffeeContext";
+import { IngredientProvider } from "./ingredientContext";
+// import PageNav from "./components/PageNavigation";
 
 function App() {
+  // const API_KEY = process.env.REACT_APP_API_KEY;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <IngredientProvider>
+        <CoffeeProvider>
+          <RouterProvider router={createBrowserRouter(routes)}></RouterProvider>
+        </CoffeeProvider>
+      </IngredientProvider>
+    </>
   );
 }
 

@@ -1,0 +1,55 @@
+/* IngredientDetails.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #ffffff;
+  transition: transform 0.2s;
+  width: 300px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardHeader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardHeader i {
+  margin-right: 0.5rem;
+  color: #4caf50;
+}
+
+.cardContent {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.cardContent span {
+  font-weight: bold;
+  color: #333;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #4caf50;
+}
