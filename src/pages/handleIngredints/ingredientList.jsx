@@ -6,15 +6,17 @@ import styles from "./ingredientList.module.css";
 import Spinner from "../Spinner";
 
 export default function IngredientList() {
-  const { onGetIngredient, ingredient, isLoading, isLoggedIn } =
+  const { onGetIngredient, ingredient, isLoading, isLoggedIn, API_URL } =
     useIngredientContext();
 
   useEffect(function () {
     onGetIngredient();
   }, []);
 
+  console.log(ingredient);
+
   function deleteIngredient(ingredient) {
-    fetch(`/api/v1/adminPanel/${ingredient}`, {
+    fetch(`${API_URL}/api/v1/adminPanel/${ingredient}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

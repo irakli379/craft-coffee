@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
 import PageNav from "../components/PageNavigation";
 import { useIngredientContext } from "../ingredientContext";
 import styles from "./mainPage.module.css";
-import CurrencyConverter from "../currencyConverter";
 
 function MainPage() {
   const { setIsLoggedIn, isLoggedIn } = useIngredientContext();

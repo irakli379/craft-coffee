@@ -12,7 +12,7 @@ function isValidNumber(value) {
 export default function UpdateIngredient() {
   const navigate = useNavigate();
 
-  const { setIsLoading, isLoading } = useIngredientContext();
+  const { setIsLoading, isLoading, API_URL } = useIngredientContext();
 
   const { ingredientId } = useParams();
 
@@ -25,7 +25,7 @@ export default function UpdateIngredient() {
 
   function onGetIngredientId() {
     setIsLoading(true);
-    fetch(`/api/v1/adminPanel/${ingredientId}`, {
+    fetch(`${API_URL}/api/v1/adminPanel/${ingredientId}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

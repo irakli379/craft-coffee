@@ -31,6 +31,7 @@ function IngredientProvider({ children }) {
   const [isVegan, setIsVegan] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [ingredient, setIngredient] = useState([]);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   //   function onAddIngredient(ingName, ingPrice, ingDescription) {
   //     fetch("/api/v1/adminPanel", {
@@ -149,6 +150,7 @@ function IngredientProvider({ children }) {
         setIsVegan,
         isLoggedIn,
         setIsLoggedIn,
+        API_URL,
       }}
     >
       {children}
